@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "RESMA",
+    "slug": "resma",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "resma",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "backgroundColor": "#050505",
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#050505"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "RESMA needs microphone access for voice commands",
+        "NSContactsUsageDescription": "RESMA needs contacts to identify callers"
+      }
+    },
+    "android": {
+      "permissions": [
+        "RECORD_AUDIO",
+        "READ_CONTACTS",
+        "INTERNET"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "expo-av"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
